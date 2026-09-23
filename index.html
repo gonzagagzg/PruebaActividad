@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GOOD NIGHT WORLD</title>
+  <link rel="stylesheet" href="/vista/estilo.css">
+</head>
+<body>
+  <!-- Fondo con lluvia Matrix -->
+  <canvas id="matrix"></canvas>
+
+  <!-- Capas de efectos CRT -->
+  <div class="crt-overlay"></div>
+  <div class="scanlines"></div>
+
+  <!-- Contenido Principal -->
+  <main class="terminal-container">
+    <div class="terminal-header">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="title">root@system_override:~#</span>
+    </div>
+
+    <div class="terminal-body">
+      <!-- Texto Principal Glitch -->
+      <h1 class="glitch" data-text="GOOD NIGHT WORLD">GOOD NIGHT WORLD</h1>
+
+      <!-- Consola interactiva -->
+      <div class="console-box">
+        <p class="status">[SYS_STATUS: ACTIVE] - PROTOCOL 0x99 DEPLOYED</p>
+        <p class="typing-text" id="typingText"></p>
+      </div>
+
+      <!-- Panel de Controles -->
+      <div class="controls">
+        <button onclick="triggerGlitch()">GLITCH EXTREMO</button>
+        <button onclick="simulateHack()">EJECUTAR PROTOCOLO</button>
+        <button onclick="playBeep()">SONIDO RETRO</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="/controlador/script.js"></script>
+</body>
+</html>
